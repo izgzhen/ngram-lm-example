@@ -1,0 +1,21 @@
+Example of N-Gram Language Models
+======
+
+## Problem 2
+
+    python3 p2.py [dev|train|test]
+    UNK_PROP=0.1 python p2.py test # set UNK proportion to 0.1
+
+First argument is the name of dataset.
+
+## Problem 3
+
+I have two nearly same implementations, but the smoothing part is different.
+In a good engineering practice, they should be sharing code, but ...
+
+    python p3.py [dev|test]
+    UNK_MODE=LT2 python p3.py dev # set UNK mode to "less than 5"
+                                  # another UNK mode is "LT2"
+    python p3_linear.py [dev|test]
+
+Hyperparameter GAMMA and K are set through the global variable in source code.
